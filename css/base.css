@@ -1,0 +1,29 @@
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix::after{
+    content: '';
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    display: block;
+}
+
+.clearfix{
+    *zoom:1;
+}
+
+.div_in{
+    width: 1190px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.color_f60{
+    color: #f60!important;
+}
