@@ -1,0 +1,5 @@
+@import "/pages/modules/algorithms/algoTemp/algoTemp.wxss";
+
+.input {
+  width: 400rpx;
+}

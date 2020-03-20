@@ -1,0 +1,65 @@
+@import '/pages/models/modelTemp/modelTemp.wxss';
+
+.container {
+  top: 540rpx;
+}
+
+.chspic {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.picker1 {
+  width: 350rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  border: 1rpx solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 4px 1px 1px #ccc;
+}
+
+.picker2 {
+  width: 345rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  text-align: center;
+  border: 1rpx solid #ccc;
+  box-sizing: border-box;
+  box-shadow: 4px 1px 1px #ccc;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  height: 102rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 26rpx;
+  margin-left: 130rpx;
+  margin-right: 20rpx;
+  margin-top: 8rpx;
+  background: #337ab7;
+  color: #fff;
+}
+
+.pageChange {
+  position: absolute;
+  top: 880rpx;
+}

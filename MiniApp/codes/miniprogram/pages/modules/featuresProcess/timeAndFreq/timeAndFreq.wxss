@@ -1,0 +1,57 @@
+@import "/pages/modules/temp/temp.wxss";
+
+.alg-description {
+  height: 220rpx;
+}
+
+.data-description {
+  top: 240rpx;
+  height: 240rpx;
+}
+
+.table {
+  top: 470rpx;
+}
+
+.table-tr {
+  display: table-row;
+  width: 700rpx;
+  height: 70rpx;
+}
+
+.table-td {
+  display: table-cell;
+  border: 2rpx solid black;
+  font-size: 28rpx;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dealt-button {
+  top: 820rpx;
+  right: 25rpx;
+}
+
+.initxls-button {
+  top: 820rpx;
+}
+
+.show-text {
+  top: 920rpx;
+}
+
+.datasize-text {
+  top: 980rpx;
+}
+
+.xls-button {
+  top: 1040rpx;
+}
+
+.showtext {
+  top: 1040rpx;
+}
+
+.table1 {
+  top: 1100rpx;
+}

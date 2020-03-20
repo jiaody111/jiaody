@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "异常点检测",
+  "usingComponents": {
+    "ec-canvas": "../../../../ec-canvas/ec-canvas"
+  }
+}

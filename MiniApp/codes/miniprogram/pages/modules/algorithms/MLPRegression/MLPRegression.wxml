@@ -1,0 +1,26 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<template is='algo-result-template' data="{{buttonText:buttonText,showResult:showResult,TableArray:TableArray}}"/>
+<modal hidden="{{hiddenmodalput}}" title="设置MLP算法的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="MLPTap">
+  <view class='line'></view>
+  <view class='Algo-Item'>
+    <text class='param-name'>选择的解决器</text>
+    <input class='input' bindchange='ParamValue1Tap' type='text' value='{{value1}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>最大迭代数</text>
+    <input class='input' bindchange='ParamValue2Tap' type='number' value='{{value2}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>正则化系数</text>
+    <input class='input' bindchange='ParamValue3Tap' type='digit' value='{{value3}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>精度</text>
+    <input class='input' bindchange='ParamValue4Tap' type='digit' value='{{value4}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>随机数生成器的状态</text>
+    <input class='input' bindchange='ParamValue5Tap' type='text' value='{{value5}}'></input>
+  </view>
+</modal>

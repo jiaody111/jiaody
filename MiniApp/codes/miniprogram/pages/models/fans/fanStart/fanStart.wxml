@@ -1,0 +1,70 @@
+<view class='expStart-container'>
+  <view class="i-divider-mart">
+    <i-divider content="问题描述" color="#B8B8DC" lineColor="#B8B8DC"></i-divider>
+  </view>
+  <text class='exp-description'>在风电领域，低温环境会导致叶片结冰，这对风机的发电性能和安全运行造成很大威胁。</text>
+  <view class="i-divider-mart">
+    <i-divider content="实验目的" color="#A6A6D2" lineColor="#A6A6D2"></i-divider>
+  </view>
+  <text class='exp-description'>通过风机在连续时间内的SCADA原始数据来检测风机当前的状态（故障或正常）。</text>
+  <view class="i-divider-mart">
+    <i-divider content="实验描述" color="#8080C0" lineColor="#8080C0"></i-divider>
+  </view>
+  <text class='exp-description'>{{ml_Desp}}</text>
+</view>
+<view class="i-divider-mart">
+  <i-divider content="实验步骤" color="#5A5AAD" lineColor="#5A5AAD"></i-divider>
+</view>
+<view class="one-tag">
+  <i-steps direction="vertical">
+    <i-step>
+      <view slot="title">
+        <text class='step1'>数据预处理</text>
+      </view>
+      <view slot="content">
+        采用OneClassSVM对数据进行预处理，清除异常点
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step2'>数据可视化</text>
+      </view>
+      <view slot="content">
+        用散点图和柱状图对预处理后的数据可视化
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step3'>特征提取</text>
+      </view>
+      <view slot="content">
+        采用Window时间窗对特征进行处理
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step4'>算法选择及调优</text>
+      </view>
+      <view slot="content">
+        {{mlDesp}}
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step5'>数据集划分</text>
+      </view>
+      <view slot="content">
+        将样本分割成训练集和测试集
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step6'> 完成实验</text>
+      </view>
+      <view slot="content">
+        查看算法的训练结果
+      </view>
+    </i-step>
+  </i-steps>
+</view>
+<image class='add-image' bindtap='navTo_OneClassSVM' src='/images/icons/add.png'></image>

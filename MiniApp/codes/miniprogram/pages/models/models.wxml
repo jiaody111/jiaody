@@ -1,0 +1,50 @@
+<swiper indicator-dots='true' autoplay='true' interval='3000' duration='1000' catchtap="onSwiperTap" >
+  <swiper-item>
+    <image src='/images/fan-swiper.jpg' class='swiperImg' data-imgId='1'></image>
+  </swiper-item>
+  <swiper-item>
+    <image src='/images/cutter-swiper.jpg' class='swiperImg' data-imgId='2'></image>
+  </swiper-item>
+</swiper>
+<view class='topTabSwiper'>
+  <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>
+    <image class='header-img' src='/images/icons/draughtfan.png' /> 风机结冰
+  </view>
+  <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>
+    <image class='header-img' src='/images/icons/cutter.png' /> 刀具磨损
+  </view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:270px;" duration="300" bindchange="bindchange">
+  <swiper-item>
+    <view class='exp-container' bindtap='navTo_fanStart' id='1'>
+      <image src='/images/fan1.png' class='exp-img'></image>
+      <view class='exp-title-container'>
+        <text class='exp-name'>风机结冰——预测实验 \n</text>
+        <text class='exp-desp'>使用GBDT算法预测风机状态</text>
+      </view>
+    </view>
+    <view class='exp-container' bindtap='navTo_fanStart' id='2'>
+      <image src='/images/fan2.jpg' class='exp-img'></image>
+      <view class='exp-title-container'>
+        <text class='exp-name'>风机结冰——对比模型 \n</text>
+        <text class='exp-desp'>使用GBDT和RF算法预测风机状态</text>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view class='exp-container' bindtap='navTo_cuttersStart' id='3'>
+      <image src='/images/cutter1.jpg' class='exp-img'></image>
+      <view class='exp-title-container'>
+        <text class='exp-name'>刀具磨损——预测实验 \n</text>
+        <text class='exp-desp'>使用LightGBM算法预测刀具寿命</text>
+      </view>
+    </view>
+    <view class='exp-container' bindtap='navTo_cuttersStart' id='4'>
+      <image src='/images/cutter0.jpg' class='exp-img'></image>
+      <view class='exp-title-container'>
+        <text class='exp-name'>刀具磨损——对比模型 \n</text>
+        <text class='exp-desp'>使用不同算法对比预测刀具剩余寿命</text>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

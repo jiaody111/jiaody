@@ -1,0 +1,6 @@
+@import '/pages/models/modelTemp/modelTemp.wxss';
+
+.input-container {
+  height: 460rpx;
+}
+

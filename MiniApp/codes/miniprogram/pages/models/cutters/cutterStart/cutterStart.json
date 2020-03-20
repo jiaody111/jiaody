@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "i-steps": "../../../../../dist/steps/index",
+    "i-step": "../../../../../dist/step/index",
+    "i-divider": "../../../../dist/divider/index"
+  },
+    "navigationBarTitleText": "刀具剩余寿命预测实验"
+}

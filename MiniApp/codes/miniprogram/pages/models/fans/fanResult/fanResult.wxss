@@ -1,0 +1,29 @@
+@import '/pages/models/modelTemp/modelTemp.wxss';
+
+.big-title {
+  position: absolute;
+  top: 710;
+  left: 20rpx;
+  height: 70rpx;
+  text-align: center;
+  padding-top: 3rpx;
+}
+
+.submit-button {
+  position: absolute;
+  top: 710;
+  right: 20rpx;
+  width: 140rpx;
+  font-size: 30rpx;
+  height: 70rpx;
+  margin-top: 0rpx;
+}
+
+.container {
+  top: 350rpx;
+}
+
+.table {
+  top: 950rpx;
+  margin-bottom: 50rpx;
+}

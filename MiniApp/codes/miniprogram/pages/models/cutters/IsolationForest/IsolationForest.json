@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-steps": "../../../../../dist/steps/index",
+    "i-page": "../../../../dist/page/index",
+    "i-icon": "../../../../dist/icon/index",
+    "i-panel": "../../../../dist/panel/index",
+    "i-step": "../../../../../dist/step/index"
+  },
+  "navigationBarTitleText": "数据预处理"
+}

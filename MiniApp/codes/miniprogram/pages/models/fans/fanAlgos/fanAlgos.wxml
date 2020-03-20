@@ -1,0 +1,70 @@
+<import src='/pages/models/modelTemp/modelTemp.wxml' />
+<view class="i-steps-demo">
+  <i-steps>
+    <i-step status="finish">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="finish">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="finish">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="process">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+  </i-steps>
+</view>
+<template is='title-template' data='{{title:title,illustration:illustration}}' />
+<view class='chspic'>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前查看的算法 : {{array[index]}}
+    </view>
+    <view class='down-arrow'></view>
+  </picker>
+</view>
+<view class='add-ALG-container'>
+  <text>已添加的算法：</text>
+  <view wx:for="{{obj}}" wx:key="{{index}}" class="addlabel">{{name[index]}}</view>
+</view>
+<view class='input-container'>
+  <view class='algo-title'>设置{{array[index]}}算法的参数：</view>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>{{param1Name}}</view>
+      <input class='input' name='param1Value' value='{{param1Value}}'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>{{param2Name}}</view>
+      <input class='input' name='param2Value' value='{{param2Value}}'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>{{param3Name}}</view>
+      <input class='input' name='param3Value' value='{{param3Value}}'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>{{param4Name}}</view>
+      <input class='input' name='param4Value' value='{{param4Value}}'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>{{param5Name}}</view>
+      <input class='input' name='param5Value' value='{{param5Value}}'></input>
+    </view>
+    <button class='submit-button' hover-class='submit-hover' form-type='submit'>添加算法</button>
+  </form>
+</view>
+<template is='page-template' data='{{page:page}}' />

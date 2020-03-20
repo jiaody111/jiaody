@@ -1,0 +1,32 @@
+<view class='exps-container'>
+  <view class='exp-name'>实验类型</view>
+  <view class='exp-item'>{{data.labTitle}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-name'>实验时间</view>
+  <view class='exp-item'>{{data.time}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-name'>实验描述</view>
+  <view class='exp-item'>{{data.title}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-name'>数据预处理</view>
+  <view class='exp-item'>{{data.preHandle}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-name'>特征提取</view>
+  <view class='exp-item'>{{data.feature}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-algo-name'>算法</view>
+  <view class='exp-algo-item'>{{data.algorithm}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-name'>数据集划分</view>
+  <view class='exp-item'>{{data.divider}}</view>
+</view>
+<view class='exps-container'>
+  <view class='exp-name'>结果</view>
+  <view class='exp-item'>{{data.result}}</view>
+</view>

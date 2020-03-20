@@ -1,0 +1,83 @@
+@import "/pages/modules/temp/temp.wxss";
+
+.alg-description {
+  height: 120rpx;
+}
+
+.data-description {
+  top: 140rpx;
+  height: 120rpx;
+}
+
+.init-button1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 270rpx;
+  left: 20rpx;
+  height: 80rpx;
+  width: 300rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #5c5e61;
+  border: 0.5rpx solid #5c5e61;
+  color: #fff;
+}
+
+.init-button2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 270rpx;
+  right: 20rpx;
+  height: 80rpx;
+  width: 340rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #337ab7;
+  border: 0.5rpx solid #337ab7;
+  color: #fff;
+}
+
+.container {
+  top: 380rpx;
+}
+
+.dealt-button1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 960rpx;
+  height: 80rpx;
+  background: #5c5e61;
+  border: 0.5rpx solid #5c5e61;
+  color: #fff;
+  left: 25rpx;
+  width: 300rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.dealt-button2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 960rpx;
+  height: 80rpx;
+  right: 25rpx;
+  width: 340rpx;
+  background: #337ab7;
+  border: 0.5rpx solid #337ab7;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  background: #337ab7;
+}

@@ -1,0 +1,217 @@
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 740rpx;
+}
+
+.alg-description {
+  position: absolute;
+  font-size: 34rpx;
+  width: 720rpx;
+  margin-left: 10rpx;
+  display: flex;
+  top: 30rpx;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #337ab7;
+}
+
+.data-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  width: 720rpx;
+  font-size: 34rpx;
+  color: #6c6c6c;
+  margin-left: 10rpx;
+}
+
+.Algo-input-Container {
+  position: absolute;
+  top: 270rpx;
+  bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 700rpx;
+  height: 400rpx;
+  margin-left: 25rpx;
+  margin-bottom: 20rpx;
+  background-color: #fcfcfc;
+  padding-bottom: 10rpx;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+  box-shadow: 4px 1px 1px #ccc;
+}
+
+.Algo-Item {
+  height: 80rpx;
+  margin-bottom: 15rpx;
+  margin-top: 20rpx;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.param-name {
+  width: 340rpx;
+  margin-left: 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.input {
+  margin-left: 20rpx;
+  height: 80rpx;
+  width: 350rpx;
+  border: 2rpx solid rgba(0, 0, 0, 0.096);
+  border-radius: 25rpx;
+}
+
+.paramTitle {
+  font-size: 32rpx;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550rpx;
+  background: #e4e4e4;
+  height: 3rpx;
+}
+
+.button-container {
+  height: 70rpx;
+  width: 700rpx;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  top: 450rpx;
+}
+
+.table1 {
+  position: absolute;
+  top: 1080rpx;
+  margin-bottom: 50rpx;
+  margin-left: 20rpx;
+  display: table;
+  width: 720rpx;
+  border-collapse: collapse;
+  overflow-x: hidden;
+  margin-top: 30rpx;
+}
+
+.table-tr {
+  display: table-row;
+  width: 700rpx;
+  height: 70rpx;
+}
+
+.table-td {
+  display: table-cell;
+  border: 1px solid black;
+  font-size: 28rpx;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.dealt-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1190rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #337ab7;
+  border: 0.5rpx solid #337ab7;
+  color: #fff;
+}
+
+.show-text {
+  position: absolute;
+  top: 900rpx;
+  margin-left: 20rpx;
+  color: #337ab7;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+}
+
+.datasize-text {
+  position: absolute;
+  top: 960rpx;
+  margin-left: 50rpx;
+  font-size: 34rpx;
+}
+
+.showtext {
+  position: absolute;
+  top: 1020rpx;
+  margin-left: 50rpx;
+  font-size: 34rpx;
+  height: 60rpx;
+}
+
+.xls-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60rpx;
+}
+
+.initxls-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 840rpx;
+  height: 80rpx;
+  left: 25rpx;
+  background: #5c5e61;
+  border: 0.5rpx solid #5c5e61;
+  color: #fff;
+}
+
+.xls-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1020rpx;
+  left: 300rpx;
+  height: 60rpx;
+  font-size: 32rpx;
+  text-align: center;
+  background: #5c5e61;
+  border: 0.5rpx solid #5c5e61;
+  color: #fff;
+}
+
+.train-button {
+  position: absolute;
+  top: 480rpx;
+  background: #337ab7;
+  border: 0.5rpx solid #337ab7;
+  color: #fff;
+}

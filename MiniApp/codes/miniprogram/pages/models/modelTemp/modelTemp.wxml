@@ -1,0 +1,26 @@
+<template name='i-steps-template'>
+  <view class="i-steps-demo">
+    <i-steps>
+      <block wx:for='steps' wx:for-item='item'>
+        <i-step status="{{item}}">
+          <view slot="title" />
+        </i-step>
+      </block>
+    </i-steps>
+  </view>
+</template>
+
+<template name='title-template'>
+  <view class='big-title-container'>
+    <view class='big-title'>{{title}}</view>
+    <view class='illustration'>{{illustration}}</view>
+  </view>
+</template>
+
+<template name='page-template'>
+  <view class='pageChange'>
+    <button class='pre' bindtap='prevPage'>Prev</button>
+    <view class='currentPage'>{{page}}</view>
+    <button class='next' bindtap='nextPage'>Next</button>
+  </view>
+</template>

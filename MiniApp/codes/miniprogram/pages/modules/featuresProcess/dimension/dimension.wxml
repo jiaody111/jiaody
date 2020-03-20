@@ -1,0 +1,27 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<view class='button-container'>
+  <button class='initxls-button' bindtap='initXlsTap' plain='true'>降维处理原始文件</button>
+  <button class='dealt-button' bindtap='dimensionTap'>PCA主成分分析</button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="设置特征降维的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="submitbuttonTap">
+  <view class='line'></view>
+  <view class='Algo-Item'>
+    <text class='param-name'>主成分的个数</text>
+    <input class='input' bindchange='attributeTap' type='number' value='{{dimension}}'></input>
+  </view>
+</modal>
+<view class="{{showResult?'view_show':'view_hide'}}">
+  <text class='show-text'>处理结果如下：\n</text>
+  <view class='xls-container'>
+    <text class='showtext'>各主成分方差占比：</text>
+    <button class='xls-button' bindtap='xlsTap' plain='true' hover-class='xlsbutton-hover'>降维处理后文件</button>
+  </view>
+</view>
+<scroll-view scroll-x style=" white-space: nowrap; display: flex" class='table1'>
+  <view class="table-tr">
+    <block wx:for='{{tableName}}'>
+      <view class="table-td">{{item}}</view>
+    </block>
+  </view>
+</scroll-view>

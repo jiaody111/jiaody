@@ -1,0 +1,18 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<template is='algo-result-template' data="{{buttonText:buttonText,showResult:showResult,TableArray:TableArray}}"/>
+<modal hidden="{{hiddenmodalput}}" title="设置Adaboost算法的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="AdaboostTap">
+  <view class='line'></view>
+  <view class='Algo-Item'>
+    <text class='param-name'>弱回归学习器</text>
+    <input class='input' bindchange='ParamValue1Tap' type='text' value='{{value1}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>算法</text>
+    <input class='input' bindchange='ParamValue2Tap' type='text' value='{{value2}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>学习率</text>
+    <input class='input' bindchange='ParamValue3Tap' type='digit' value='{{value3}}'></input>
+  </view>
+</modal>

@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/modules/modules",
+    "pages/models/models",
+    "pages/person/person",
+    "pages/expDetail/expDetail",
+    "pages/models/cutters/cutterStart/cutterStart",
+    "pages/models/cutters/IsolationForest/IsolationForest",
+    "pages/models/cutters/cutterCharts/cutterChart",
+    "pages/models/cutters/timeFeature/timeFeature",
+    "pages/models/cutters/cutterAlgos/cutterAlgos",
+    "pages/models/cutters/cutterDivider/cutterDivider",
+    "pages/models/cutters/cutterResult/cutterResult",
+    "pages/models/fans/fanStart/fanStart",
+    "pages/models/fans/fanCharts/fanCharts",
+    "pages/models/fans/OneClassSVM/OneClassSVM",
+    "pages/models/fans/window/window",
+    "pages/models/fans/fanAlgos/fanAlgos",
+    "pages/models/fans/fanDivider/fanDivider",
+    "pages/models/fans/fanResult/fanResult",
+    "pages/modules/preprocess/SMOTE/SMOTE",
+    "pages/modules/preprocess/Normalization/Normalization",
+    "pages/modules/preprocess/IsolationForest/IsolationForest",
+    "pages/modules/featuresProcess/timeDomain/timeDomain",
+    "pages/modules/featuresProcess/timeAndFreq/timeAndFreq",
+    "pages/modules/featuresProcess/freqDomain/freqDomain",
+    "pages/modules/featuresProcess/dimension/dimension",
+    "pages/modules/algorithms/GBDT/GBDT",
+    "pages/modules/algorithms/Adaboost/Adaboost",
+    "pages/modules/algorithms/LightGBM/LightGBM",
+    "pages/modules/algorithms/LinearRegression/LinearRegression",
+    "pages/modules/algorithms/MLPRegression/MLPRegression",
+    "pages/modules/algorithms/RFClassifier/RFClassifier",
+    "pages/modules/algorithms/RFRegression/RFRegression",
+    "pages/modules/algorithms/SVM/SVM"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#337ab7",
+    "navigationBarTitleText": "PHM在线实验平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "组件",
+        "pagePath": "pages/modules/modules",
+        "iconPath": "images/icons/zujianliebiao.png",
+        "selectedIconPath": "images/icons/zujianliebiao2.png"
+      },
+      {
+        "text": "案例",
+        "pagePath": "pages/models/models",
+        "iconPath": "images/icons/anli.png",
+        "selectedIconPath": "images/icons/anli2.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/person/person",
+        "iconPath": "images/icons/person.png",
+        "selectedIconPath": "images/icons/person2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

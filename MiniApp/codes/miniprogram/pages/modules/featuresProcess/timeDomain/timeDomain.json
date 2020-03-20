@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时域特征提取",
+  "usingComponents": {
+    "ec-canvas": "../../../../ec-canvas/ec-canvas"
+  }
+}

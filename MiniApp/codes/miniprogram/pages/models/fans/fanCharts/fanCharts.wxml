@@ -1,0 +1,63 @@
+<import src='/pages/models/modelTemp/modelTemp.wxml' />
+<view class="i-steps-demo">
+  <i-steps>
+    <i-step status="finish">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="process">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+  </i-steps>
+</view>
+<view class='big-title-container'>
+  <text class='big-title'>2.数据可视化\n</text>
+</view>
+<view class='chspic'>
+  <picker bindchange="bindPickerChange1"  value="{{index1}}" range="{{array1}}">
+    <view class="picker1">
+      {{array1[index1]}}
+    </view>
+  </picker>
+  <view class='button-container'>
+    <button class='submit-button' hover-class='submit-hover' bindtap='graphsTap'>查看</button>
+  </view>
+</view>
+<view class='chspic'>
+  <view class="{{showView1?'view_show':'view_hide'}}">
+    <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+      <view class="picker2">
+        {{array2[index2]}}
+      </view>
+    </picker>
+  </view>
+  <view class="{{showView2?'view_show':'view_hide'}}">
+    <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+      <view class="picker2">
+        {{array3[index3]}}
+      </view>
+    </picker>
+  </view>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<template is='page-template' data='{{page:page}}' />
+

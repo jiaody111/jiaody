@@ -1,0 +1,16 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<template is='table-template' data="{{array:array}}" />
+<view class='button-container'>
+  <button class='train-button' plain='true' bindtap='frequencyTap'>频域特征提取</button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="设置频域特征提取的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="freqDomainTap">
+  <view class='line'></view>
+  <view class='Algo-Item'>
+    <text class='param-name'>attribute</text>
+    <input class='input' bindchange='attributeTap' type='text' value='{{attribute}}'></input>
+  </view>
+</modal>
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ec }}"></ec-canvas>
+</view>

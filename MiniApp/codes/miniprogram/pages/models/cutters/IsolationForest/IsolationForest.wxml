@@ -1,0 +1,42 @@
+<import src='/pages/models/modelTemp/modelTemp.wxml' />
+<view class="i-steps-demo">
+  <i-steps>
+    <i-step status="process">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+  </i-steps>
+</view>
+<template is='title-template' data='{{title:title,illustration:illustration}}' />
+<view class='input-container'>
+  <text class='algo-title'>设置IsolationForest算法的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>异常点比例</view>
+      <input class='input' name='inputValue' type='digit' value='0.001'></input>
+    </view>
+    <button class='submit-button' form-type='submit' disabled='{{disabled}}'>提交参数</button>
+  </form>
+</view>
+<template is='page-template' data='{{page:page}}' />

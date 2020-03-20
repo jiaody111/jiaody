@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "样本均衡化",
+  "usingComponents": {
+    "ec-canvas": "../../../../ec-canvas/ec-canvas"
+  }
+}

@@ -1,0 +1,13 @@
+<view class='welcome-container'>
+  <text class='welcome1'>欢迎来到\n</text>
+  <text class='welcome2'>WELCOME</text>
+</view>
+<view class='avatar-container'>
+  <image src='/images/wxAvatar.png' class='wx-avatar'></image>
+</view>
+
+<view class='index-text-container'>
+  <text class='line1'>工业大数据预测性维护体验平台</text>
+  <text class='line2'>PHM Online Platform</text>
+</view>
+<button open-type='getUserInfo' bindgetuserinfo='getUserInfo' class='login-button' plain='true'>现在登录</button>

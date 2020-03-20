@@ -1,0 +1,22 @@
+@import "/pages/modules/temp/temp.wxss";
+
+.alg-description {
+  height: 170rpx;
+}
+
+.data-description {
+  top: 190rpx;
+  height: 220rpx;
+}
+
+.table {
+  top: 400rpx;
+}
+
+.train-button {
+  top: 750rpx;
+}
+
+.container {
+  top: 850rpx;
+}

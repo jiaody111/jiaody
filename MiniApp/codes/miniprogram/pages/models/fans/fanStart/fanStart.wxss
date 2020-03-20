@@ -1,0 +1,48 @@
+.one-tag {
+  font-size: 36rpx;
+  margin: 50rpx 10rpx 0rpx 50rpx;
+}
+
+.expStart-container {
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx 5rpx 0 5rpx;
+}
+
+.exp-description {
+  margin: 25rpx 20rpx 0 20rpx;
+  font-size: 34rpx;
+  color: #3C3C3C;
+}
+
+.add-image {
+  position: fixed;
+  top: 1000rpx;
+  left: 520rpx;
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.step1 {
+  color: #a5a552;
+}
+
+.step2 {
+  color: #5cadad;
+}
+
+.step3 {
+  color: #ad5a5a;
+}
+
+.step4 {
+  color: #8080c0;
+}
+
+.step5 {
+  color: #ae57a4;
+}
+
+.step6 {
+  color: #f75000;
+}

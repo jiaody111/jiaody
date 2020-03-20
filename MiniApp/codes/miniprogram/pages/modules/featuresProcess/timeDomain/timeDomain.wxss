@@ -1,0 +1,19 @@
+@import "/pages/modules/temp/temp.wxss";
+
+.alg-description {
+  height: 220rpx;
+}
+
+.data-description {
+  top: 240rpx;
+  height: 220rpx;
+}
+
+.initxls-button {
+  top: 800rpx;
+}
+
+.dealt-button {
+  top: 800rpx;
+  right: 25rpx;
+}

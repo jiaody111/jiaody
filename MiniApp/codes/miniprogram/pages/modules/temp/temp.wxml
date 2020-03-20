@@ -1,0 +1,79 @@
+<template name='description-temp'>
+  <view class='description-container'>
+    <view class='alg-description'>
+      <text>{{algoDescription}}</text>
+    </view>
+    <view class='data-description'>
+      <text>{{dataDescription}}</text>
+    </view>
+  </view>
+</template>
+
+<template name='table-template'>
+  <view class='table'>
+    <block wx:for="{{array}}" wx:for-item='items'>
+      <view class="table-tr">
+        <block wx:for='{{items}}'>
+          <view class="table-td">{{item}}</view>
+        </block>
+      </view>
+    </block>
+  </view>
+</template>
+
+<template name='feature-result-template'>
+  <view class="{{showResult?'view_show':'view_hide'}}">
+    <text class='show-text'>处理结果如下：\n</text>
+    <text class='datasize-text'>处理后的数据量为： {{dataSize}}</text>
+    <view class='xls-container'>
+      <text class='showtext'>已选择的特征：</text>
+      <button class='xls-button' plain='true' bindtap='xlsTap'>{{featureButton}}</button>
+    </view>
+    <scroll-view scroll-x style=" white-space: nowrap; display: flex" class='table1'>
+      <view class="table-tr">
+        <block wx:for='{{v1Array}}'>
+          <view class="table-td">{{item}}</view>
+        </block>
+      </view>
+      <view class="table-tr">
+        <block wx:for='{{v2Array}}'>
+          <view class="table-td">{{item}}</view>
+        </block>
+      </view>
+      <view class="table-tr">
+        <block wx:for='{{v3Array}}'>
+          <view class="table-td">{{item}}</view>
+        </block>
+      </view>
+      <view class="table-tr">
+        <block wx:for='{{currArray}}'>
+          <view class="table-td">{{item}}</view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</template>
+
+<template name='algo-result-template'>
+  <view class='button-container'>
+    <button class='train-button' plain='true' bindtap='showModal'>{{buttonText}}</button>
+  </view>
+  <view class="{{showResult?'view_show':'view_hide'}}">
+    <text class='show-text'>训练结果如下：\n</text>
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" class="table">
+      <block wx:for='{{TableArray}}' wx:key='*this' wx:for-item='oneArray'>
+        <view class="table-tr" wx:if='{{index<1}}'>
+          <block wx:for='{{oneArray}}' wx:key='id'>
+            <view class="table-th">{{item}}</view>
+          </block>
+        </view>
+        <view class="table-tr" wx:else>
+          <block wx:for='{{oneArray}}'>
+            <view class="table-td">{{item}}</view>
+          </block>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</template>
+

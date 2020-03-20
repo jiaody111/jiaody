@@ -1,0 +1,43 @@
+<import src='/pages/models/modelTemp/modelTemp.wxml' />
+<view class="i-steps-demo">
+  <i-steps>
+    <i-step status="finish">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="finish">
+      <view slot="title">
+      </view>
+    </i-step>
+    <i-step status="process">
+      <view slot="title">
+      </view>
+    </i-step>
+       <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+       <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+       <i-step status="">
+      <view slot="title">
+      </view>
+    </i-step>
+  </i-steps>
+</view>
+<template is='title-template' data='{{title:title,illustration:illustration}}' />
+<view class='input-container'>
+  <text class='algo-title'>设置TimeFeature算法的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+  <view class='input-item'>
+    <text class='param-name'>时间窗长度</text>
+    <input class='input' name='stepValue' type='number' value='10'></input>
+  </view>
+ <button class='submit-button' hover-class='submit-hover' form-type='submit' disabled='{{disabled}}'>提交参数</button>
+  </form>
+</view>
+<template is='page-template' data='{{page:page}}' />
+

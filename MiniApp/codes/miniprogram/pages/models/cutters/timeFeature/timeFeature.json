@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "i-steps": "../../../../../dist/steps/index",
+    "i-step": "../../../../../dist/step/index",
+    "i-page": "../../../../dist/page/index",
+    "i-icon": "../../../../dist/icon/index",
+    "i-panel": "../../../../dist/panel/index"
+  },
+    "navigationBarTitleText": "特征提取"
+}

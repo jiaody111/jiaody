@@ -1,0 +1,21 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<view class='Algo-input-Container'>
+  <text class='paramTitle'>设置IsolationForest算法的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='Algo-Item'>
+      <text class='param-name'>异常点比例</text>
+      <input class='input' name='input_contamination' type='digit' value='0.02'></input>
+    </view>
+    <view class='button-container'>
+      <view class="{{showView?'view_show':'view_hide'}}">
+        <button class='algoLeft-button' bindtap='clearTap'>异常点清除</button>
+      </view>
+      <button class='algoRight-button' form-type='submit'>异常点检测</button>
+    </view>
+  </form>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-scatter" canvas-id="mychart-scatter" ec="{{ ec }}"></ec-canvas>
+</view>

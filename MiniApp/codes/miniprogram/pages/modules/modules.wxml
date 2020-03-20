@@ -1,0 +1,54 @@
+<view class='bc-container'>
+  <text class='bc-text1'>故障诊断与寿命预测\n</text>
+  <text class='bc-text2'>PHM Online Platform</text>
+</view>
+<view class='module-list-container'>
+  <view class='header-container'>
+    <image class='header-img' src='/images/icons/biaoqian.png' />
+    <text class='header-text'>{{headerText[0]}}</text>
+  </view>
+  <view class='modulesContainer'>
+    <block wx:for="{{proprecessItems}}" wx:for-item='Item'>
+      <view class='module-container' catchtap='toProprecessDetailPageTap' data-item="{{Item}}" hover-class='view-hover'>
+        <image class='module-image' src='/images/icons/chuli.png'></image>
+        <text class='module-text'>{{Item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='header-container'>
+    <image class='header-img' src='/images/icons/biaoqian.png' />
+    <text class='header-text'>{{headerText[1]}}</text>
+  </view>
+  <view class='modulesContainer'>
+    <block wx:for="{{featuresItems}}" wx:for-item='Item'>
+      <view class='module-container' data-item="{{Item}}" catchtap='toFeaturesDetailPageTap' hover-class='view-hover'>
+        <image class='module-image' src='/images/icons/tezhengchuli.png'></image>
+        <text class='module-text'>{{Item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='header-container'>
+    <image class='header-img' src='/images/icons/biaoqian.png' />
+    <text class='header-text'>{{headerText[2]}}</text>
+  </view>
+  <view class='modulesContainer'>
+    <block wx:for="{{faultDiagAlgos}}" wx:for-item='Item'>
+      <view class='module-container' data-item="{{Item}}" catchtap='toAlgosDetailPageTap' hover-class='view-hover'>
+        <image class='module-image' src='/images/icons/fenleisuanfa.png'></image>
+        <text class='module-text'>{{Item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='header-container'>
+    <image class='header-img' src='/images/icons/biaoqian.png' />
+    <text class='header-text'>{{headerText[3]}}</text>
+  </view>
+  <view class='modulesContainer'>
+    <block wx:for="{{lifePredAlgos}}" wx:for-item='Item'>
+      <view class='module-container' data-item="{{Item}}" catchtap='toAlgosDetailPageTap' hover-class='view-hover'>
+        <image class='module-image' src='/images/icons/suanfa.png'></image>
+        <text class='module-text'>{{Item}}</text>
+      </view>
+    </block>
+  </view>
+</view>

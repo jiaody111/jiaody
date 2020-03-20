@@ -1,0 +1,39 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<template is='table-template' data="{{array:array}}" />
+<template is='feature-result-template' data="{{showResult:showResult,dataSize:dataSize,TableArray:TableArray,v1Array:v1Array,v2Array:v2Array,v3Array:v3Array,currArray:currArray,featureButton:featureButton}}" />
+<view class='button-container'>
+  <button class='initxls-button' plain='true' bindtap='initXlsTap'>时域处理原始文件</button>
+  <button class='dealt-button' bindtap='timeTap'>时域特征提取</button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="设置时域特征提取的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="timeDomainTap">
+  <view class='line' />
+  <view class='Algo-Item'>
+    <text class='param-name'>窗口长度</text>
+    <input class='input' bindchange='windowLengthTap' type='number' value='{{windowLength}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>平均值avg</text>
+    <switch type="checkbox" checked="{{avgChecked}}" bindchange="avgChange" />
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>标准差std</text>
+    <switch type="checkbox" checked="{{stdChecked}}" bindchange="stdChange" />
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>方差var</text>
+    <switch type="checkbox" checked="{{varChecked}}" bindchange="varChange" />
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>偏度值skew</text>
+    <switch type="checkbox" checked="{{skewChecked}}" bindchange="skewChange" />
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>峰度值kur</text>
+    <switch type="checkbox" checked="{{kurChecked}}" bindchange="kurChange" />
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>峰峰值ptp</text>
+    <switch type="checkbox" checked="{{ptpChecked}}" bindchange="ptpChange" />
+  </view>
+</modal>

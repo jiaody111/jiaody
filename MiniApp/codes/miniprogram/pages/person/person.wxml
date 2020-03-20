@@ -1,0 +1,65 @@
+<view class='about-container'>
+  <view class='about' bindtap="showDialogBtn">about us</view>
+  <view class='phmlearn' bindtap="showLinkTap">phmlearn link</view>
+</view>
+
+<view class='login-container'>
+  <image src='{{avatarUrl}}' class='avatar' bindtap='getAvatar'></image>
+  <text>{{nickName}}</text>
+</view>
+<view class="li" bindtap='changeToggle'>
+  <view class="header">我完成的实验</view>
+  <view class="right-num">{{arrayLength}}</view>
+</view>
+<view wx:if='{{show}}'>
+  <view class='no-exp'>尚无实验记录</view>
+</view>
+<view wx:else>
+  <block wx:for='{{expData}}'>
+    <view class='exps-container '>
+      <view class='title-container'>
+        <view class='labtitle'>{{item.labTitle}}</view>
+        <view class='time'>{{item.time}}</view>
+      </view>
+      <view class='look-container'>
+        <view class='look' catchtap='expLookTap' data-expId='{{item.instanceId}}'>查看</view>
+        <view class='delete' catchtap='expDelTap' data-expId='{{item.instanceId}}'>删除</view>
+      </view>
+    </view>
+  </block>
+</view>
+<i-action-sheet visible="{{visible}}" actions="{{actions}}" show-cancel bind:cancel="handleCancel" bind:click="handleClickItem" mask-closable="{{ false }}">
+  <view slot="header" style="padding: 16px">
+    <view style="color: #444;font-size: 16px">确定删除吗？</view>
+    <text>实验记录删除后无法恢复</text>
+  </view>
+</i-action-sheet>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">we are bupt_phm from BUPT</view>
+  <view class="modal-content">
+    <text>指导老师：吴振宇\n</text>
+    <text>团队成员：臧梦磊 焦丹阳\n</text>
+    <text>联系我们：13693315470@163.com\n</text>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">崇尚奉献</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">追求卓越</view>
+  </view>
+</view>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showLink}}"></view>
+<view class="modal-dialog" wx:if="{{showLink}}">
+  <view class="modal-title">we are bupt_phm from BUPT</view>
+  <view class="modal-content">
+    <text>如果您还想了解更多\n</text>
+    <text>学习 or 设计预测性维护案例\n</text>
+    <text>欢迎访问 http://phmlearn.com</text>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">厚德博学</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">敬业乐群</view>
+  </view>
+</view>
+
+
+

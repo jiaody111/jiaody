@@ -1,0 +1,15 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<view class='button-container'>
+  <button class='init-button1' plain='true' bindtap='initXlsTap' >归一化前文件</button>
+  <button class='init-button2' bindtap='initChartTap'>归一化前柱状图</button>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ec}}"></ec-canvas>
+</view>
+<view class="{{showView?'view_show':'view_hide'}}">
+  <view class='button-container'>
+    <button class='dealt-button1' plain='true' bindtap='NormXlsTap'>归一化后文件</button>
+    <button class='dealt-button2' bindtap='NormChartTap'>归一化后柱状图</button>
+  </view>
+</view>

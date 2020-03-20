@@ -1,0 +1,19 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<template is='table-template' data="{{array:array}}" />
+<template is='feature-result-template' data="{{showResult:showResult,dataSize:dataSize,TableArray:TableArray,v1Array:v1Array,v2Array:v2Array,v3Array:v3Array,currArray:currArray,featureButton:featureButton}}" />
+<view class='button-container'>
+  <button class='initxls-button' plain='true' bindtap='initXlsTap'>时频域原始文件</button>
+  <button class='dealt-button' bindtap='timeAndFrepTap'>时频域特征提取</button>
+</view>
+<modal hidden="{{hiddenmodalput}}" title="设置时频域特征提取的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="submitbuttonTap">
+  <view class='line'></view>
+  <view class='Algo-Item'>
+    <text class='param-name'>分解阶次</text>
+    <input class='input' bindchange='attribute1Tap' type='number' value='{{waveLayer}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>窗口长度</text>
+    <input class='input' bindchange='attribute2Tap' type='number' value='{{windowLength}}'></input>
+  </view>
+</modal>

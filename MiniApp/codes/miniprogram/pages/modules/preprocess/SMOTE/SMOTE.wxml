@@ -1,0 +1,26 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<view class='button-container'>
+  <view class='Algo-input-Container'>
+    <text class='paramTitle'>设置SMOTE算法的参数：</text>
+    <view class='line'></view>
+    <form bindsubmit='formsubmit'>
+      <view class='Algo-Item'>
+        <text class='param-name'>与正样本相近的随机样本数</text>
+        <input class='input' bindchange='kneighborsTap' type='number' value='5' name='input_kneighbors'></input>
+      </view>
+      <view class='Algo-Item'>
+        <text class='param-name'>少数样本增加的百分比</text>
+        <input class='input' bindchange='ratioTap' type='number' value='500' name='input_ratio'></input>
+      </view>
+      <view class='button-container'>
+        <button class='algoinit-button' plain='true' bindtap='initChartTap'>非均衡数据散点图</button>
+        <button class='algoRight-button' form-type='submit' >均衡处理</button>
+      </view>
+    </form>
+  </view>
+</view>
+<view class='ratio'>{{name}}{{Ratio}}</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ec }}"></ec-canvas>
+</view>

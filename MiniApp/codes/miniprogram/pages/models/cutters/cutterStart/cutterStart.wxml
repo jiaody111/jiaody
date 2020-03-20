@@ -1,0 +1,70 @@
+<view class='expStart-container'>
+  <view class="i-divider-mart">
+    <i-divider content="问题描述" color="#B8B8DC" lineColor="#B8B8DC"></i-divider>
+  </view>
+  <text class='exp-description'>在切削加工领域，刀具失效可能造成工件表面粗糙度和尺寸精度的下降，或造成更严重的工件报废或机床受损。</text>
+  <view class="i-divider-mart">
+    <i-divider content="实验目的" color="#A6A6D2" lineColor="#A6A6D2"></i-divider>
+  </view>
+  <text class='exp-description'>预测刀具的剩余寿命，有效地优化工作排程且降低刀具采购成本。</text>
+  <view class="i-divider-mart">
+    <i-divider content="实验描述" color="#8080C0" lineColor="#8080C0"></i-divider>
+  </view>
+  <text class='exp-description'>{{ml_Desp}}</text>
+</view>
+<view class="i-divider-mart">
+  <i-divider content="实验步骤" color="#5A5AAD" lineColor="#5A5AAD"></i-divider>
+</view>
+<view class="one-tag">
+  <i-steps direction="vertical">
+    <i-step>
+      <view slot="title">
+        <text class='step1'>数据预处理</text>
+      </view>
+      <view slot="content">
+        使用IsolationForest对数据进行清洗，去除异常点
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step2'>数据可视化</text>
+      </view>
+      <view slot="content">
+        对预处理后的数据可视化
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step3'>特征提取</text>
+      </view>
+      <view slot="content">
+        对原始数据在时域下进行特征提取
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step4'>算法选择及调优</text>
+      </view>
+      <view slot="content">
+        {{mlDesp}}
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step5'>数据集划分</text>
+      </view>
+      <view slot="content">
+        将样本分割成训练集和测试集
+      </view>
+    </i-step>
+    <i-step>
+      <view slot="title">
+        <text class='step6'>完成实验</text>
+      </view>
+      <view slot="content">
+        查看算法的训练结果
+      </view>
+    </i-step>
+  </i-steps>
+</view>
+<image class='add-image' bindtap='navTo_IsolationForest' src='/images/icons/add.png'></image>

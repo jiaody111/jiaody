@@ -1,0 +1,26 @@
+<import src='/pages/modules/temp/temp.wxml' />
+<template is='description-temp' data="{{algoDescription:algoDescription,dataDescription:dataDescription}}" />
+<template is='algo-result-template' data="{{buttonText:buttonText,showResult:showResult,TableArray:TableArray}}"/>
+<modal hidden="{{hiddenmodalput}}" title="设置RF分类算法的参数：" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="RFTap">
+  <view class='line'></view>
+  <view class='Algo-Item'>
+    <text class='param-name'>分割的特征数目</text>
+    <input class='input' bindchange='ParamValue1Tap' type='text' value='{{value1}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>决策树的最大深度</text>
+    <input class='input' bindchange='ParamValue2Tap' type='text' value='{{value2}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>决策树的数目</text>
+    <input class='input' bindchange='ParamValue3Tap' type='number' value='{{value3}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>叶子结点最小样本数</text>
+    <input class='input' bindchange='ParamValue4Tap' type='number' value='{{value4}}'></input>
+  </view>
+  <view class='Algo-Item'>
+    <text class='param-name'>分割内部最小样本数</text>
+    <input class='input' bindchange='ParamValue5Tap' type='number' value='{{value5}}'></input>
+  </view>
+</modal>
